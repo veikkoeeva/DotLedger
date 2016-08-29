@@ -1,0 +1,6 @@
+group Test
+FSharp.Core
+xunit
+xunit.runner.console
+xunit.runner.visualstudio
+FsCheck.Xunit

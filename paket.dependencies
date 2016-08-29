@@ -1,0 +1,21 @@
+source https://api.nuget.org/v3/index.json
+framework >= net461
+
+nuget FSharp.Core 4.0.0.1
+
+group Build
+	source https://api.nuget.org/v3/index.json
+
+	nuget SourceLink.Fake
+	nuget FAKE
+	nuget FSharp.Formatting
+
+	github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+group Test
+	source https://api.nuget.org/v3/index.json
+	
+	nuget FsCheck.Xunit 2.6
+	nuget xunit 2.1.0
+	nuget xunit.runner.console 2.1.0
+	nuget xunit.runner.visualstudio version_in_path: true
